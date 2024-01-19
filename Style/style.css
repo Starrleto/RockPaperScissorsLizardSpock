@@ -1,0 +1,132 @@
+body{
+    background: linear-gradient(#fff1f1, #b0b6fd);
+    height: 160vh;
+    background-repeat: no-repeat;
+}
+
+.list-thing{
+    list-style-type:circle;
+    line-height: 40px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.normal-button{
+    background-color: rgb(148, 148, 148);
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: white;
+    border-radius: 3px;
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+}
+
+.selected-button{
+    background-color: rgb(179, 146, 227);
+    border: 1px solid transparent;
+    box-shadow: none;
+    color: white;
+    border-radius: 5px;
+    width: 210px;
+    height: 70px;
+    margin: 20px;
+}
+
+.begin-button{
+    background-color: rgb(155, 142, 214);
+    border: 0px solid transparent;
+    box-shadow: none;
+    color: white;
+    border-radius: 5px;
+    width: 210px;
+    height: 70px;
+    margin: 20px;
+}
+
+.begin-button-disable{
+    background-color: rgb(156, 156, 156);
+    border: 0px solid transparent;
+    box-shadow: none;
+    color: white;
+    border-radius: 3px;
+    width: 200px;
+    height: 60px;
+    margin: 20px;
+}
+
+.not-done{
+    pointer-events: none;
+    border-color: grey;
+}
+
+.center-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.help-center{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    margin-bottom: 50px;
+}
+
+.separate-vertical{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text-change{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: doodle;
+}
+
+.text-change-two{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: quando;
+}
+
+.navbar-activites{
+    font-family: quando;
+    text-align: center;
+    color: #58477c;
+}
+
+.play-btn{
+    box-shadow: none;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: doodle;
+    width: 500px;
+    border: 0px solid transparent;
+}
+
+.color{
+    background-color: rgb(155, 142, 214);
+    border: 1px solid transparent;
+}
+
+.heading{
+    margin: 80px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: doodle;
+}
+
+@font-face {
+    font-family: doodle;
+    src: url("../assets/RubikDoodleShadow-Regular.ttf");
+}
+
+@font-face {
+    font-family: quando;
+    src: url("../assets/Quando-Regular.ttf");
+}
+  
