@@ -32,8 +32,23 @@
         <div>
           <h1>Player v CPU</h1>
           <h4 id="winTypeText">Best out of</h4>
+          <hr>
         </div>
         <h1 id="announce" class="separate-vertical">Player One, Choose your play!</h1>
+        <h1 id="displayer"></h1>
+        <h4 id="displayerMatchup"></h4>
+        <h4 id="displayerScore"></h4>
+
+        <!--Result-->
+        <div class="d-none center-body"id="gameoverTab">
+          <h1 class="text-change">Game Over!</h1>
+            <!--End Modal Trigger-->
+            <button type="button" class="begin-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="resultOpen">
+              See Result
+            </button>
+        </div>
+        <!--Result-->
+
         <div>
           <button type="button" class="normal-button" id="rock">Rock</button>
           <button type="button" class="normal-button" id="paper">Paper</button>
@@ -42,40 +57,27 @@
           <button type="button" class="normal-button" id="spock">Spock</button>
         </div>
         <div>
-          <a href="#" id="submitBtnParent" class="not-done">
+          <a href="#announce" id="submitBtnParent" class="not-done">
             <button type="button" class="begin-button-disable not-done" id="submitBtn">Select</button>
           </a>
         </div>
-        <h1 id="displayer"></h1>
-        <h4 id="displayerMatchup"></h4>
-        <h4 id="displayerScore"></h4>
       </div>
       <!--Main-->
 
-    <!--Result-->
-    <div class="d-none center-body"id="gameoverTab">
-      <h1 class="text-change">Game Over!</h1>
-        <!--End Modal Trigger-->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="resultOpen">
-          See Result
-        </button>
-    </div>
-    <!--Result-->
-
-          <!-- End Modal -->
+      <!-- End Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+        <div class="modal-content center-body">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">Game Over</h1>
+            <h1 class="modal-title fs-5 text-change" id="staticBackdropLabel">Game Over</h1>
           </div>
-          <div class="modal-body">
+          <div class="modal-body center-body text-change">
             <h1 id="resultHeader"></h1>
             <h4 id="resultDesc"></h4>
           </div>
           <div class="modal-footer">
             <a href="../index.html">
-            <button type="button" class="btn btn-primary">Play Again</button>
+            <button type="button" class="begin-button">Play Again</button>
             </a>
           </div>
         </div>
